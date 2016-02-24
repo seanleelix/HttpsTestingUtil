@@ -4,6 +4,11 @@ When the server is in testing status, it need to avoid SSL checking specially us
 
 此类作用是避開android對服務器SSL的檢查。
 
+Update 24/02/2016:
+Beginning May 17, 2016, Google Play will block publishing of any new apps or updates containing the unsafe implementation of the interface X509TrustManager.
+Google Play 將在2016年5月17日後暫停包含 X509TrustManager 接口的程序上架，請注意！
+
+
 Usage:
 用法：
 
