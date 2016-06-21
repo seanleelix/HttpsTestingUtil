@@ -15,9 +15,7 @@ https://developer.android.com/about/versions/marshmallow/android-6.0-changes.htm
 Need to add this into gradle:
 需要在gradle中加入:
 android {
-
     useLibrary 'org.apache.http.legacy'
-    
 }
 
 
