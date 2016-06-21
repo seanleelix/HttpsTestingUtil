@@ -1,12 +1,12 @@
 
 public class HttpTestingUtil {
 
-  private static DefaultHttpClient getNewHttpClient() {
+  public static DefaultHttpClient getNewHttpClient() {
           try {
               KeyStore trustStore = KeyStore.getInstance(KeyStore.getDefaultType());
               trustStore.load(null, null);
   
-              SSLSocketFactory sf = new HotelSSLSocketFactory(trustStore);
+              SSLSocketFactory sf = new TestSSLSocketFactory(trustStore);
               sf.setHostnameVerifier(SSLSocketFactory.ALLOW_ALL_HOSTNAME_VERIFIER);
   
               HttpParams params = new BasicHttpParams();
