@@ -16,11 +16,11 @@ import javax.net.ssl.SSLContext;
 import javax.net.ssl.TrustManager;
 import javax.net.ssl.X509TrustManager;
 
-public class HotelSSLSocketFactory extends SSLSocketFactory {
+public class TestSSLSocketFactory extends SSLSocketFactory {
 
     SSLContext sslContext = SSLContext.getInstance("TLS");
 
-    public HotelSSLSocketFactory(KeyStore truststore)
+    public TestSSLSocketFactory(KeyStore truststore)
             throws NoSuchAlgorithmException, KeyManagementException,
             KeyStoreException, UnrecoverableKeyException {
         super(truststore);
