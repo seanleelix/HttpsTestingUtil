@@ -12,13 +12,12 @@ Update:
 Android 6.0 release removes support for the Apache HTTP client.
 https://developer.android.com/about/versions/marshmallow/android-6.0-changes.html#behavior-apache-http-client
 
-Need to add this into gradle:
+###Update:Need to add this into gradle:
 需要在gradle中加入:
-android {
-    useLibrary 'org.apache.http.legacy'
-}
-
-
+android {  
+    useLibrary 'org.apache.http.legacy'  
+}  
+  
 Usage:
 用法：
 
