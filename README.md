@@ -8,6 +8,15 @@ Update 24/02/2016:
 Beginning May 17, 2016, Google Play will block publishing of any new apps or updates containing the unsafe implementation of the interface X509TrustManager.
 Google Play 將在2016年5月17日後暫停包含 X509TrustManager 接口的程序上架，請注意！
 
+#Update:
+Android 6.0 release removes support for the Apache HTTP client.
+https://developer.android.com/about/versions/marshmallow/android-6.0-changes.html#behavior-apache-http-client
+
+Need to add this into gradle:
+需要在gradle中加入:
+android {
+    useLibrary 'org.apache.http.legacy'
+}
 
 Usage:
 用法：
